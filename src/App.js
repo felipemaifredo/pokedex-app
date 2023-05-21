@@ -36,9 +36,10 @@ function App() {
 
   return (
     <div className='container'>
-      <div className='input-box'>
-        <input type="text" value={searchValue} onChange={handleSearchChange} placeholder="Search Pokemon" />
-      </div>
+      <nav>
+        <img src='https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png' alt='Logo Poke Api' />
+        <input type="text" value={searchValue} onChange={handleSearchChange} placeholder="🔍 Search Pokemon" />
+      </nav>
       <ul className='pokedex'>
         {filteredPokemons.map(pokemon => (
           <li key={pokemon.id} className={`card ${pokemon.types[0].type.name}`}>

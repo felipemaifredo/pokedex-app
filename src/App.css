@@ -14,11 +14,28 @@ body {
 	align-items: center;
 }
 
-.input-box {
+nav {
 	height: 60px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-top: 20px;
+	gap: 20px;
+}
+
+nav img {
+	height: 60px;
+}
+
+nav input, select {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+}
+
+nav input:focus {
+	outline: 3px solid #3761a8;
+	background-color: #feca1b;
 }
 
 .pokedex {
@@ -90,7 +107,7 @@ body {
 }
 
 .poison {
-	background-color: #98d7a5;
+	background-color: #d6b7ff;
 }
 
 .bug {
